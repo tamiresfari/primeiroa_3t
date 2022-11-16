@@ -1,5 +1,5 @@
 let tabuada = 1;
-let nome = "Tamires";
+let nome = "tamires";
 
 function escreva() {
     document.write("tabuada do " + tabuada + "<br>")
@@ -100,22 +100,23 @@ function calcule() {
 
 }
 
-
 function calculaESG(){
-  let a = 3;
-  let b = -2;
-  let c = 8;
-  delta = (b*b) - (4*a*c);
-  let raiz; x1, x2;
-  if (delta < 0){
-   raiz = "Não tem raiz real";
-   
- }else {
-  raiz = Math.sqrt(delta);
-  x1 = ((-b)+raiz)/(2*a);
-  x2 = ((-b)-raiz)/(2*a);
-  raiz = "x1="+x1 + " e x2="+x2;
-}
+    let a = document.getElementById("a").value;
+    let b = -2;
+    let c = -8;
+    delta = (b*b) - (4*a*c)
+    let raiz;
+    let x1,x2;
+    if (delta < 0){
+        raiz = "nao tem raiz real";
 
-  document.getElementById("raiz").value = raiz;
+    }else{
+raiz = Math.sqrt(delta);
+x1 = ((-b)+raiz)/(2*a);
+x2 = ((-b)-raiz)/(2*a);
+raiz = "x1="+x1 + " e x2="+x2;
+
+    }
+
+    document.getElementById("raiz").value = raiz; 
 }
